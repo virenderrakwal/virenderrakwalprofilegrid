@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-top.svg) ,url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position-x: left -100px, right -100px;
+    background-position-y: top -550px, bottom -550px;
+}
+
+.profile-card {
+    margin: 200px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+    background-color: #fff;
+}
+
+.image-container {
+    height: 185px;
+    background-image: url(images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 19.5px 19.5px 0 0;
+}
+
+.image-icon {
+    border-radius: 50%;
+    border: 6.5px solid white;
+    transform: translate(0px, 125px);
+}
+
+.peronal-info-container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 12vh;
+}
+
+.peronal-information {
+    padding-top: 80px;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+.social-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+}
+
+hr {
+    border: 1px solid hsl(0, 0%, 97%);
+    background-color: hsl(0, 0%, 97%);
+}
+
+text-bold{
+    font-weight: 700;
+}
+
+@media (max-width: 600px){
+    body{
+        background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+        background-size: 100%;
+        background-position-x: left -200px, right -200px;
+        background-position-y: top -50%, bottom -50%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .profile-card{
+        margin: 185px 49px 49px 49px;
+        background-position-x: left 300px, right 300px;
+    }
+}
